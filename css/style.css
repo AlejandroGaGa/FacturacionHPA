@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    font-family:'Arial';
+    font-size:25pt;
+    letter-spacing: 1px;
+    width: 100%;
+    background: #c88719; 
+ padding: 15px;
+ color: #000000;
+ text-align: center;
+ text-transform: uppercase;
+ }
+p{
+     font-family:'Arial';
+    color: #000000;
+}
+#container{
+    background: #262626;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container form{
+    background:#ffe97d ;
+    width: 500px;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid #c88719;
+}
+
+#container form img{
+margin: 15px auto;
+    text-align: center;
+    display: block;
+    widows: 90px;
+    height: 100px;
+}
+#container form input{
+    width: 90%;
+    padding:5px;
+    font-size: 16pt;
+    display: block;
+    margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+#container form input[type="submit"]{
+background: #ffe97d;
+padding: 10px;
+color:#000000;
+letter-spacing: 1px;
+border: 10px;
+cursor: pointer;
+}
+#container form input[type="submit"]:hover{
+    
+    opacity: 0.8;
+    background: #c88719;
+    color: black;
+   display: block;
+    }
+    .alert{
+        font-family: 'Arial';
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .footer {
+    background: #c88719;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    color: #000000;
+}
