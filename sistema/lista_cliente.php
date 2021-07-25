@@ -21,6 +21,8 @@ include "../conexion.php";
 	<br>
 	<br>
 	<br>
+	<br>
+	<br>
 	<section id="container">
 	<h1><i class="fas fa-user-plus"></i> Lista | Clientes</h1>
 	<br>
