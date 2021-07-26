@@ -26,6 +26,7 @@ include "../conexion.php";
 	<br>
 	<br>
 	<br>
+	<br>
 	<section id="container">
 	<h1><i class="far fa-address-card"></i> Lista | Proveedores</h1>
 	<a href="registro_proveedor.php" class="btn_new"><i class="fas fa-ad"></i> Crear un nuevo proveedor</a>
