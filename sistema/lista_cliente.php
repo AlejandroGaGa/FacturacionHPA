@@ -12,7 +12,7 @@ include "../conexion.php";
 	include "includes/scripts.php";
 	?>
 		
-	<title>HPA | Clientes Registrados</title>
+	<title>HPA | Clientes Registrados 2022</title>
 </head>
 <body>
 	<?php 
@@ -49,12 +49,17 @@ include "../conexion.php";
 
 
 		//paginador
-		$sql_register = mysqli_query($conection, "SELECT COUNT(*) AS total_registro FROM cliente Where estatus = 1");
+		$sql_reg = mysqli_query($conection, "SELECT COUNT(*) AS total_registro FROM cliente Where estatus = 1");
 
-		$result_register = mysqli_fetch_array($sql_register);
+		$result_register = mysqli_fetch_array($sql_reg);
 		$total_registro = $result_register['total_registro'];
 
 		$por_pagina = 5;
+		
+
+		$desde = ($pagina-1) * $por_pagina;
+		 $total_paginas = ceil($total_registro / $por_pagina);
+
 
 		if(empty($_GET['pagina'])){
 			$pagina = 1;
@@ -62,6 +67,16 @@ include "../conexion.php";
 		else{
 			$pagina = $_GET['pagina'];
 		}
+
+		
+/* 
+		if(empty($_GET['pagina'])){
+			$pagina = 1;
+		}
+		else{
+			$pagina = $_GET['pagina'];
+		}
+ */
 
 
 		$desde = ($pagina-1) * $por_pagina;
